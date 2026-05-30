@@ -61,8 +61,22 @@ This document provides details on testing various services after running the `do
 ## Instructions
 1. Start all services using the `docker-compose` file:
    ```
-   docker-compose up
+   docker-compose up -d
    ```
 2. Once the services are running, use the above endpoints to verify the functionality.
 
-Happy testing!
+## Basic Troubleshooting
+
+1. Make sure in the start up command of each docker file you have to use CMD ["node", "app.js"]
+
+2. Define a shared network "my-network" and declare the network at the end of the docker compose file"
+
+
+ 
+
+
+ 
+
+ 
+ 
+
